@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peter Parker - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Peter Parker
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          PParker@Peemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2022/05/15/04/36/art-7196739_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Peter Parker! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a highly skilled scientist with a strong educational background in biology, physics and chemistry, graduating from Empire State University.
+            I have worked on several scientific projects during my time at OSCorp, under my mentor, Otto.
+            I also worked at the Daily Bugle as a Photographer.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="https://cdn.pixabay.com/photo/2016/06/21/16/26/logo-1471418_1280.png"/>
+          <h6>Biology</h6>
+          <p>Bachelor's Degree</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://cdn.pixabay.com/photo/2016/03/31/19/13/atom-1294810_1280.png"/>
+          <h6>Physics</h6>
+          <p>Minor Degree</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2017/01/31/00/14/bubble-2022490_1280.png"/>
+            <h6>Chemistry</h6>
+            <p>Minor Degree</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2016/04/01/10/47/camera-1300022_1280.png"/>
+            <h6>Photography</h6>
+            <p>3 years experince</p>
+          </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Regenerative Genetics</h3>
+            <ul>
+              <li>Researched and experimented with reptilian Genetics, to develop biological medicine able to mend and regrow human limbs.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Biopolymer Research</h3>
+            <ul>
+              <li>Experimented with Biopolymers and resins to create synthetic webbing material that mimics the strength and adhesion of spider silk.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>NanoTech</h3>
+            <ul>
+              <li>Studying Nanotech and utilising them for various purposes, such as medical applications and potential body armour.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Peter showcases exceptional intelligence and passion for science.
+          His innovative approach to research and experimentation consistently yields impressive results and inspires those around him.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working alongside Peter exposes his brilliant scientific mind and dedication. 
+          He balances humor and hard work, making even the toughest projects enjoyable and successful.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Peter's creativity and resourcefulness in solving complex problems make him an invaluable team member.
+          His photographic eye captures moments that truly matter.
+          Looks good in a spandex suit but definitely not a superhero...
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->Thank you for the Recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
